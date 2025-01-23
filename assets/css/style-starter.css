@@ -12776,7 +12776,7 @@ audio {
 }
 
 .chatbot-header {
-  background-color: #573818;
+  background-color: #5562ad;
   color: white;
   padding: 10px;
   display: flex;
@@ -12827,7 +12827,7 @@ audio {
 }
 
 .chatbot-input button {
-  background-color: #00b4d8;
+  background-color: #50d2e6;
   color: white;
   padding: 8px 15px;
   border: none;
@@ -12836,12 +12836,12 @@ audio {
 }
 
 .chatbot-input button:hover {
-  background-color: #007bff;
+  background-color: #4699f2;
 }
 
 .user-message {
   align-self: flex-end;
-  background-color: #00b4d8;
+  background-color: #4699f2;
   padding: 10px;
   border-radius: 20px;
   max-width: 80%;
@@ -12859,7 +12859,7 @@ audio {
 }
 
 .chatbot-input button:hover {
-  background-color: #007bff;
+  background-color: #4075ad;
 }
 
 /* Arrow Button to Open Chatbot */
@@ -12867,7 +12867,7 @@ audio {
   position: fixed;
   bottom: 80px;
   right: 20px;
-  background-color: #0077b5;
+  background-color: #4075ad;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -12875,5 +12875,5 @@ audio {
 }
 
 .chat:hover {
-  background-color:#007bff;
+  background-color:#4075ad;
 }
