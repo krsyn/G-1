@@ -12776,7 +12776,7 @@ audio {
 }
 
 .chatbot-header {
-  background-color: #5562ad;
+  background-color: #141517;
   color: white;
   padding: 10px;
   display: flex;
@@ -12836,12 +12836,12 @@ audio {
 }
 
 .chatbot-input button:hover {
-  background-color: #4699f2;
+  background-color: #19a0b5;
 }
 
 .user-message {
   align-self: flex-end;
-  background-color: #4699f2;
+  background-color: #1e1f21;
   padding: 10px;
   border-radius: 20px;
   max-width: 80%;
@@ -12859,7 +12859,7 @@ audio {
 }
 
 .chatbot-input button:hover {
-  background-color: #4075ad;
+  background-color: #191c1f;
 }
 
 /* Arrow Button to Open Chatbot */
