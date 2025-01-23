@@ -492,8 +492,16 @@
                    botMessage.textContent = "you can buy to our facebook page search Jeanspired";
            } else if (userMessage.toLowerCase().includes("Jeanspired")) {
                     botMessage.textContent = "We create stylish, functional bags for denim lovers. We are a team of passionate fashion enthusiasts who celebrate the craftsmanship of quality jeans-inspired designs, offering our customers the unique opportunity to experience bags that combine style, durability, and versatility.";
-           } else if (userMessage.toLowerCase().includes("team")) {
+           } else if (userMessage.toLowerCase().includes("team") || userMessage.toLowerCase().includes("member")) {
                     botMessage.textContent = "Maraya, Andrei, Krisha Gwyny Unisan, Ma. Victoria Mutuc, Maan Nuguit, and Charlotte Rocero";
+          } else if (userMessage.toLowerCase().includes("3 in 1 price")) {
+                    botMessage.textContent = "JS Triflex 3 in 1 Demin Bag ₱234";
+          } else if (userMessage.toLowerCase().includes("shoulder bag price")) {
+                    botMessage.textContent = "JS Urban Demin Shoulder Bag ₱195";
+          } else if (userMessage.toLowerCase().includes("Ecotote bag price")) {
+                    botMessage.textContent = "JS Ecotote Demin Bag ₱141.70";
+          } else if (userMessage.toLowerCase().includes("hobo bag price")) {
+                    botMessage.textContent = "JS Denim Vibe Hobo Bag ₱169";
            } else {
                botMessage.textContent = "Sorry, I didn't understand that. Can you ask something else?";
            }
