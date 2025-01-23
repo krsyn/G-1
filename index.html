@@ -482,14 +482,14 @@
     </div>
   </div>
 <!-- Arrow Button to Open Chatbot -->
-<a href="#" class="chat" id="openChatbotBtn"><img src="assets/image/logojeanspired.png" alt="" width="60px"></a>
+<a href="#" class="chat" id="openChatbotBtn"><img src="gimmy.png" alt="" width="60px"></a>
 
 <!-- Chatbot Modal -->
 <div id="chatbotModal" class="chatbot-modal">
     <div class="chatbot-modal-content">
         <div class="chatbot-header">
             <span id="chatbotClose" class="chatbot-close">&times;</span>
-            <h4>Chat with us!</h4>
+            <h4>GIMMY CHATBOT AT YOUR SERVICE</h4>
         </div>
         <div class="chatbot-body">
             <div id="chatbotMessages" class="chatbot-messages">
@@ -553,13 +553,19 @@
                botMessage.textContent = "Hello! How can I assist you today?";
            } else if (userMessage.toLowerCase().includes("location") || userMessage.toLowerCase().includes("store")) {
                botMessage.textContent = " 6975 A. Bonifacio St. San Dionsio Parañaque City";
-           } else if (userMessage.toLowerCase().includes("where i can buy?")) {
+           } else if (userMessage.toLowerCase().includes("where i can buy?") || userMessage.toLowerCase().includes("donate") || userMessage.toLowerCase().includes("order")) {
                    botMessage.textContent = "you can buy to our facebook page search Jeanspired";
            } else if (userMessage.toLowerCase().includes("Jeanspired")) {
                     botMessage.textContent = "We create stylish, functional bags for denim lovers. We are a team of passionate fashion enthusiasts who celebrate the craftsmanship of quality jeans-inspired designs, offering our customers the unique opportunity to experience bags that combine style, durability, and versatility.";
-           } else if (userMessage.toLowerCase().includes("team") || userMessage.toLowerCase().includes("member")) {
-                    botMessage.textContent = "Maraya, Andrei, Krisha Gwyny Unisan, Ma. Victoria Mutuc, Maan Nuguit, and Charlotte Rocero";
-          } else if (userMessage.toLowerCase().includes("3 in 1")) {
+           } else if (userMessage.toLowerCase().includes("team") || userMessage.toLowerCase().includes("people behind") || userMessage.toLowerCase().includes("team behind") || userMessage.toLowerCase().includes("member")) {
+                    botMessage.textContent = "Maraya, Andrei- Chief Executive Officer., Krisha Gwyny Unisan- Chief Marketing Officer, Ma. Victoria Mutuc- Chief Operating Office, Maan Nuguit- Chief Product Officer, and Charlotte Rocero- Chief Financial Officer";
+           } else if (userMessage.toLowerCase().includes("support")) {
+                    botMessage.textContent = "You can contact customer support for Jeanspired by emailing us at jeanspiredco@gmail.com. If you have any other questions or need further assistance, feel free to ask! I'm here to help!";
+           } else if (userMessage.toLowerCase().includes("sale assistant")) {
+                    botMessage.textContent = "Our Sales Assistant is Krisha Gwyn Unisan. They oversee production processes and assist the Sales Head in meeting client needs. If you have any more questions or need further information, just let me know!";
+           } else if (userMessage.toLowerCase().includes("item")) {
+                    botMessage.textContent = "JS Triflex 3 in 1 Demin Bag,JS Urban Demin Shoulder Bag,JS Ecotote Demin Bag,JS Denim Vibe Hobo Bag ₱169";
+           } else if (userMessage.toLowerCase().includes("3 in 1")) {
                     botMessage.textContent = "JS Triflex 3 in 1 Demin Bag ₱234";
           } else if (userMessage.toLowerCase().includes("shoulder bag")) {
                     botMessage.textContent = "JS Urban Demin Shoulder Bag ₱195";
