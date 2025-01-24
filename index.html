@@ -65,6 +65,68 @@
                       </div>
                       <a class="close" href="#close">×</a>
                   </div>
+                <div class="search-right">
+    <a href="#search" title="search"><span class="fa fa-search" aria-hidden="true"></span></a>
+    <!-- search popup -->
+    <div id="search" class="pop-overlay">
+        <div class="popup">
+            <form id="search-form" action="error.html" method="GET" class="search-box">
+                <input type="search" id="search-input" placeholder="Enter Keyword" name="search" required="required" autofocus="">
+                <button type="submit" class="btn"><span class="fa fa-search" aria-hidden="true"></span></button>
+            </form>
+            <div id="dynamic-link-container" style="display:none;">
+                <!-- Dynamically generated links will appear here -->
+            </div>
+        </div>
+        <a class="close" href="#close">×</a>
+    </div>
+</div>
+
+<script>
+    document.getElementById('search-input').addEventListener('input', function() {
+        var searchValue = this.value.toLowerCase();
+        var linkContainer = document.getElementById('dynamic-link-container');
+        
+        // Hide the link container by default
+        linkContainer.style.display = 'none';
+        linkContainer.innerHTML = ''; // Clear any previous links
+
+        // Check the input value and display the appropriate link
+        if (searchValue === "home") {
+            linkContainer.innerHTML = '<a class="nav-link" href="index.html">Go to Home</a>';
+        } else if (searchValue === "about") {
+            linkContainer.innerHTML = '<a class="nav-link" href="about.html">About Us</a>';
+        } else if (searchValue === "our products") {
+            linkContainer.innerHTML = '<a class="nav-link" href="services.html">Our Products</a>';
+        } else if (searchValue === "contact") {
+            linkContainer.innerHTML = '<a class="nav-link" href="contact.html">Contact Us</a>';
+        }
+        
+        // Only show the link container if there's a link to display
+        if (linkContainer.innerHTML !== '') {
+            linkContainer.style.display = 'block';
+        }
+    });
+
+    // Prevent form from submitting and redirect when a valid search term is typed
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+        var searchValue = document.getElementById('search-input').value.toLowerCase();
+        if (searchValue === "home") {
+            event.preventDefault();
+            window.location.href = "index.html"; // Redirect to home page
+        } else if (searchValue === "about") {
+            event.preventDefault();
+            window.location.href = "about.html"; // Redirect to about page
+        } else if (searchValue === "our products") {
+            event.preventDefault();
+            window.location.href = "services.html"; // Redirect to products page
+        } else if (searchValue === "contact") {
+            event.preventDefault();
+            window.location.href = "contact.html"; // Redirect to contact page
+        }
+    });
+</script>
+
                   <!-- /search popup -->
               </div>
               <!--//search-right-->
