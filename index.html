@@ -65,60 +65,26 @@
         <a class="close" href="#close">×</a>
     </div>
 </div>
-
-<script>
-    document.getElementById('search-input').addEventListener('input', function() {
-        var searchValue = this.value.toLowerCase();
-        var linkContainer = document.getElementById('dynamic-link-container');
-        
-        // Hide the link container by default
-        linkContainer.style.display = 'none';
-        linkContainer.innerHTML = ''; // Clear any previous links
-
-        // Check the input value and display the appropriate link
-        if (searchValue === "home") {
-            linkContainer.innerHTML = '<a class="nav-link" href="index.html">Go to Home</a>';
-        } else if (searchValue === "about") {
-            linkContainer.innerHTML = '<a class="nav-link" href="about.html">About Us</a>';
-        } else if (searchValue === "our products") {
-            linkContainer.innerHTML = '<a class="nav-link" href="services.html">Our Products</a>';
-        } else if (searchValue === "contact") {
-            linkContainer.innerHTML = '<a class="nav-link" href="contact.html">Contact Us</a>';
-        }
-        
-        // Only show the link container if there's a link to display
-        if (linkContainer.innerHTML !== '') {
-            linkContainer.style.display = 'block';
-        }
-    });
-
-    // Prevent form from submitting and redirect when a valid search term is typed
-    document.getElementById('search-form').addEventListener('submit', function(event) {
-        var searchValue = document.getElementById('search-input').value.toLowerCase();
-        if (searchValue === "home") {
-            event.preventDefault();
-            window.location.href = "index.html"; // Redirect to home page
-        } else if (searchValue === "about") {
-            event.preventDefault();
-            window.location.href = "about.html"; // Redirect to about page
-        } else if (searchValue === "our products") {
-            event.preventDefault();
-            window.location.href = "services.html"; // Redirect to products page
-        } else if (searchValue === "contact") {
-            event.preventDefault();
-            window.location.href = "contact.html"; // Redirect to contact page
-        }
-    });
-</script>
-
-                  <!-- /search popup -->
-              </div>
-              <!--//search-right-->
+            <!--//search-right-->
               <div class="top-quote mr-lg-3 mt-lg-0">
                   <a href="https://www.facebook.com/messages/t/524567880740786" class="btn btn-style btn-primary">Buy Now</a>
               </div>
           </div>
           <!-- toggle switch for light and dark theme -->
+          <div class="mobile-position">
+              <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                      <label class="theme-switch" for="checkbox">
+                          <input type="checkbox" id="checkbox">
+                          <div class="mode-container">
+                              <i class="gg-sun"></i>
+                              <i class="gg-moon"></i>
+                          </div>
+                      </label>
+                  </div>
+              </nav>
+          </div>
+         <!-- toggle switch for light and dark theme -->
           <div class="mobile-position">
               <nav class="navigation">
                   <div class="theme-switch-wrapper">
