@@ -11559,7 +11559,7 @@ button.owl-next {
 
 .breadcrumb-bg-about {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.35), rgba(0, 0, 0, 0.35)), url(log.jpg);
+  background-image: linear-gradient(to right, rgba(25, 25, 25, 0.35), rgba(0, 0, 0, 0.35)), url(../images/IMG_2921.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom;
   background-attachment: fixed; }
